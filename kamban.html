@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kambam</title>
+    <link rel="stylesheet" href="kanban.css" />
+</head>
+<body>
+    <div class="layout">
+        <div class="form--new--tarefa">
+            <form>
+                <h2>NEw Task</h2>
+
+                <label for="data">Date: </label>
+                <input type="date" id="data"> <br><br>
+
+                <label for="description">Description: </label>
+                <input type="text" id="description"> <br><br>
+
+                <label for="status">Status: </label>
+                <select id="status">
+                    <option>To Do</option>
+                    <option>Doing</option>
+                    <option>Done</option>
+                </select> <br> <br>
+
+                <input type="button" value="Delete">
+                <input type="button" value="Edit">
+                <input type="button" value="Send">
+            </form>
+        </div>
+        <div class="table--kamban">
+            <table>
+                <caption>
+                    Kamban
+                </caption>
+                <thead>
+                    <tr>
+                        <th>to do</th>
+                        <th>Doing</th>
+                        <th>Done</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 
+                            27/06 <br>
+                            JavaScript
+                        </td>
+                        <td>
+                            26/06 <br>
+                            CSS
+                        </td>
+                        <td> 
+                            25/06 <br>
+                            HTML
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
